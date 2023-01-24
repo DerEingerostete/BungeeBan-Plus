@@ -168,8 +168,8 @@ To allow multiple languages a folder named `lang` is created at the first start,
 These are selected with the `language` option in the `config.json`.
 
 ## Download
-Currently, there is no resource on SpigotMC yet, so the plugin can currently only be downloaded via the [release tab](https://github.com/DerEingerostete/BasicHomes/releases).<br/>
-The latest release can be found [here](https://github.com/DerEingerostete/BasicHomes/releases/latest).
+Currently, there is no resource on SpigotMC yet, so the plugin can currently only be downloaded via the [release tab](https://github.com/DerEingerostete/BungeeBan-Plus/releases).<br/>
+The latest release can be found [here](https://github.com/DerEingerostete/BungeeBan-Plus/releases/latest).
 
 ## License
 Distributed under the MPL 2.0 License. See [`LICENSE`](/LICENSE) for more information.
