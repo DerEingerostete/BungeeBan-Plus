@@ -26,9 +26,9 @@ ___
 | /mute    |        Mutes a player with the given reason        |           `/mute <player> <reasonId>`            | bungeeban.mute    |
 | /unban   |        Removes the active bans of a player         |                 `/ban <player>`                  | bungeeban.unban   |
 | /unmute  |        Removes the active mute of a player         |                 `/mute <player>`                 | bungeeban.unmute  |
-| /reasons | Displays information about reasons for punishment  |           `/reasons <mute&#124;ban> <O: id>`           | bungeeban.reasons |
-| /history | Displays information about the history of a player | `/history <player> <O: activities&#124;mutes&#124;bans>`  | bungeeban.history |
-| /chatlog |             Allows to manage chat logs             |    `/chatlog <view&#124;create&#124;player> <player&#124;id>`     | bungeeban.chatlog |
+| /reasons | Displays information about reasons for punishment  |           `/reasons <mute/ban> <O: id>`           | bungeeban.reasons |
+| /history | Displays information about the history of a player | `/history <player> <O: activities/mutes/bans>`  | bungeeban.history |
+| /chatlog |             Allows to manage chat logs             |    `/chatlog <view/create/player> <player/id>`     | bungeeban.chatlog |
 
 > **Note**<br/>
 > Options with the prefix `O:` are optional
