@@ -8,6 +8,7 @@
 
 package de.dereingerostete.bungeeban.chatlog;
 
+import de.dereingerostete.bungeeban.entity.mute.chatlog.ChatLog;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
