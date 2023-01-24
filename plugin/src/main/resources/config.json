@@ -1,0 +1,6 @@
+{
+  "database": "sqlite",
+  "language": "en",
+  "cacheDuration": 1800000,
+  "debug": false
+}

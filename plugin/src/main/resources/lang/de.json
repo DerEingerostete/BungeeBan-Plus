@@ -1,0 +1,146 @@
+{
+  "prefix": "§8» §cBan §8| §7",
+  "ban": {
+    "permanentMessage": [
+      "§c§lPermanent gebannt",
+      "§7",
+      "§7",
+      "§Grund §8» §7%REASON%",
+      "§7",
+      "§8Entbannungsanträge via Discord oder Forum",
+      "§eDiscord §8» §c§nKommt bald",
+      "§eForum §8» §c§nKommt bald"
+    ],
+    "temporaryMessage": [
+      "§c§lTemporär gebannt",
+      "§7",
+      "§7",
+      "§cGrund §8» §7%REASON%",
+      "§cDauer §8» §7%DURATION%",
+      "§7",
+      "§7Entbannungsanträge via Discord oder Forum",
+      "§3Discord §8» §7Kommt bald",
+      "§3Forum §8» §7Kommt bald"
+    ]
+  },
+  "mute": {
+    "temporaryMessage": [
+      "§m§c------------------------------",
+      "§7Du bist gemutet für §c%DURATION%",
+      "§cGrund §8» §7%REASON%",
+      "§m§c------------------------------"
+    ],
+    "permanentMessage": [
+      "§m§c------------------------------",
+      "§7Du bist permanent gemuted",
+      "§cGrund §8» §7%REASON%",
+      "§m§c------------------------------"
+    ]
+  },
+  "timeLayout": {
+    "days": "%D% Tag(e) %H%h %M%min and %S%s",
+    "hours": "%H% Stunde(n) %M%min and %S%s",
+    "minutes": "%M% Minute(n) and %S% Sekunde(n)",
+    "seconds": "%S% Sekunden"
+  },
+  "command": {
+    "ban": {
+      "usage": "§cVerwendung: /ban <Spieler> <GrundId>",
+      "success": "§7Der Spieler §c%name%§7 wurde gebannt!",
+      "invalidId": "§cEs muss eine valide Id angegeben werden!",
+      "unknownId": "§cDiesen Grund gibt es nicht!",
+      "alreadyBanned": "§cDieser Spieler ist bereits gebannt!"
+    },
+    "mute": {
+      "usage": "§cVerwendung: /mute <Spieler> <GrundId>",
+      "success": "§7Der Spieler §c%name%§7 wurde stumm geschaltet!",
+      "invalidId": "§cEs muss eine valide Id angegeben werden!",
+      "unknownId": "§cDiesen Grund gibt es nicht!",
+      "alreadyMuted": "§cDieser Spieler ist bereits gestummt worden!"
+    },
+    "reasons": {
+      "usage": "§cVerwendung: /reasons <Mute|Ban>",
+      "unknownReason": "§cDiese Bestrafungsart gibt es nicht!",
+      "listMessage": "%id% » %name%",
+      "hoverMessage": "§7%description%",
+      "invalidId": "§cEs muss eine valide Id angegeben werden!",
+      "unknownId": "§cDiesen Grund gibt es nicht!",
+      "infoMessage": [
+        "§9Id: §7%id%",
+        "§9Name: §7%name%",
+        "§9Beschreibung: §7%description%"
+      ],
+      "infoMessageDuration": "§9Dauer beim %timesBanned%. mal: §7%duration%"
+    },
+    "unban": {
+      "usage": "§cVerwendung: /unban <Spieler>",
+      "success": "§7Der Spieler §c%name%§7 wurde entbannt",
+      "notBanned": "§cDer Spieler ist nicht gebannt!"
+    },
+    "unmute": {
+      "usage": "§cVerwendung: /unmute <Spieler>",
+      "success": "§7Die Stummschaltung des Spielers §c%name%§7 wurde aufgehoben",
+      "notMuted": "§cDer Spieler ist nicht stumm geschaltet!"
+    },
+    "history": {
+      "usage": "§cVerwendung: /history <Spieler>",
+      "notSaved": "§cÜber diesen Spieler gibt es keine Infos!",
+      "unknownType": "§cSolche Infos gibt es nicht!",
+      "general": [
+        "§8======================",
+        "§7Gebannt: %banned%",
+        "§7Gestummt: %muted%",
+        "§7Aktivität: %activity%",
+        "§7",
+        "§7Insgesamte Bans: §8%timesBanned%",
+        "§7Insgesamte Stummschaltungen: §8%timesMuted%",
+        "§8======================"
+      ],
+      "generalParameters": {
+        "yes": "§cJa",
+        "no": "§aNein",
+        "online": "§8Online",
+        "offline": "§8Offline"
+      },
+      "activities": {
+        "header": [
+          "§8======================",
+          "§7| Server | Spielzeit |"
+        ],
+        "footer": ["§8======================"],
+        "lastServer": "§7Letzter Server: §8%name%",
+        "entry": "§8%name% §8» §7%time%"
+      },
+      "punishment": {
+        "header": [
+          "§8================================",
+          "§7| Reason | Gebannt durch | Wann |"
+        ],
+        "footer": ["§8================================"],
+        "entry": "§7%reason% §8× §7%punisher% §8× §7%time%"
+      }
+    },
+    "chatlog": {
+      "usage": "§cVerwendung: /chatlog <view|create|player> <Spieler|Id>",
+      "success": "§aChatLog wurde erfolgreich erstellt",
+      "noMessages": "§cVon diesem Spieler gibt es keine Chatnachrichten!",
+      "playerHasNone": "§cDieser Spieler hat keine Chatlogs!",
+      "header": [
+        "§8=============",
+        "§7| Id | Wann |"
+      ],
+      "footer": ["§8============="],
+      "entry": "§6%id% §8× §7%time%",
+      "unknownId": "§cEs wurde kein Chatlog mit dieser Id gefunden!",
+      "created": [
+        "§7Ein Link für den ChatLog wurde erfolgreich generiert",
+        "§8Link: §7%url%",
+        "§8Dauer: §7%duration%"
+      ]
+    },
+    "unknownPlayer": "§cDiesen Spieler gibt es nicht!",
+    "unknownError": "§cEin unerwarteter Fehler ist aufgetreten!",
+    "noSelfSelection": "§cDu darfst dich nicht selber angeben!",
+    "cannotPunish": "§cDu kannst diesen Spieler nicht bestrafen!"
+  }
+}

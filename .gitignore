@@ -1,0 +1,9 @@
+/deprecated
+/.idea
+/target
+/plugin/target
+/api/target
+*.iml
+*.db
+permissions.md
+Ideas.md

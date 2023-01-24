@@ -1,0 +1,13 @@
+{
+  "uptimeCheck": 900000,
+  "mysql": {
+    "hostname": "localhost",
+    "port": 3306,
+    "database": "BungeeBan",
+    "username": "username",
+    "password": "password"
+  },
+  "sqlite": {
+    "path": "sqlite.db"
+  }
+}

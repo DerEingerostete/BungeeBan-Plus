@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Cheating",
+    "displayName": "Illegal game modifications",
+    "description": "Gaining advantages through unauthorized game modifications, such as Kill Aura or X-Ray.",
+    "duration": [2592000000, 7776000000, 15552000000, -1],
+    "ipBan": false
+  },
+  {
+    "id": 2,
+    "name": "Griefing",
+    "displayName": "Griefing",
+    "description": "Destroy or deface other players' buildings",
+    "duration": [2592000000, -1],
+    "ipBan": false
+  },
+  {
+    "id": 3,
+    "name": "Trolling",
+    "displayName": "Trolling",
+    "description": "Building inappropriate things or intentionally behaving inappropriately towards other players",
+    "duration": [1209600000, 2592000000, 7776000000, -1],
+    "ipBan": false
+  },
+  {
+    "id": 4,
+    "name": "Ban Bypass",
+    "displayName": "Ban Bypass",
+    "description": "Bypassing a ban through a secondary account",
+    "duration": [-1],
+    "ipBan": true
+  },
+  {
+    "id": 5,
+    "name": "Inappropriate skin/name",
+    "displayName": "Inappropriate skin or name",
+    "description": "Using an inappropriate skin or name",
+    "duration": [259200000, 1209600000, 2592000000, -1],
+    "ipBan": false
+  },
+  {
+    "id": 6,
+    "name": "Trading with real money",
+    "displayName": "Trading with real money",
+    "description": "Exchange real money for items or activities",
+    "duration": [-1],
+    "ipBan": false
+  },
+  {
+    "id": 7,
+    "name": "Bug Abuse",
+    "displayName": "Bug Abuse",
+    "description": "The exploitation of bugs",
+    "duration": [1209600000, 2592000000, 7776000000, -1],
+    "ipBan": false
+  },
+  {
+    "id": 99,
+    "name": "Server Ban",
+    "displayName": "Server Ban",
+    "description": "Permanently prohibits entering the server",
+    "duration": [-1],
+    "ipBan": false
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Inappropriate chat behavior",
+    "displayName": "Inappropriate chat behavior",
+    "description": "Includes insults, sexism, racism and other types of hate speech",
+    "duration": [1209600000],
+    "requiresChatLog": true
+  },
+  {
+    "id": 2,
+    "name": "Extremism",
+    "displayName": "Extremism",
+    "description": "Includes right-wing & left-wing extremism and support for dangerous organizations",
+    "duration": [2592000000],
+    "requiresChatLog": true
+  },
+  {
+    "id": 3,
+    "name": "Dissemination of misinformation",
+    "displayName": "Dissemination of misinformation",
+    "description": "Includes, for example, conspiracy theories",
+    "duration": [-1],
+    "requiresChatLog": false
+  },
+  {
+    "id": 4,
+    "name": "Provocation",
+    "displayName": "Provocation",
+    "description": "Includes provoking players as a form of trolling",
+    "duration": [2592000000],
+    "requiresChatLog": true
+  },
+  {
+    "id": 5,
+    "name": "Spamming",
+    "displayName": "Excessive chat behavior",
+    "description": "When a player spams quite a few messages in quick succession",
+    "duration": [2592000000],
+    "requiresChatLog": false
+  },
+  {
+    "id": 6,
+    "name": "Advertisement",
+    "displayName": "Advertisement",
+    "description": "When a player posts links or advertises for a public figure",
+    "duration": [1209600000],
+    "requiresChatLog": true
+  },
+  {
+    "id": 99,
+    "name": "Chat exclusion",
+    "displayName": "Exclusion from the chat",
+    "description": "Permanently excludes a player from the chat",
+    "duration": [-1],
+    "requiresChatLog": false
+  }
+]

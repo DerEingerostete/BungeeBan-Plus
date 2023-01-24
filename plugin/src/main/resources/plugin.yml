@@ -1,0 +1,8 @@
+name: BungeeBan
+description: Punish people with custom punishments
+author: DerEingerostete
+depend: [LuckPerms]
+
+version: 1.0
+api-version: 1.0
+main: de.dereingerostete.bungeeban.BungeeBanPlugin

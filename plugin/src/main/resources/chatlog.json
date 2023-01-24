@@ -1,0 +1,30 @@
+{
+  "actions": {
+    "enableLinkGeneration": true,
+    "uploader": "pastebin",
+    "chatBacklog": 50
+  },
+  "pastebin": {
+    "expiration": "TEN_MINUTES",
+    "visibility": "UNLISTED",
+    "developerKey": null,
+    "userKey": null
+  },
+  "hastebin": {
+    "url": "https://www.toptal.com/developers/hastebin"
+  },
+  "header": "  ____                              ____              \n |  _ \\                            |  _ \\             \n | |_) |_   _ _ __   __ _  ___  ___| |_) | __ _ _ __  \n |  _ <| | | | '_ \\ / _` |/ _ \\/ _ \\  _ < / _` | '_ \\ \n | |_) | |_| | | | | (_| |  __/  __/ |_) | (_| | | | |\n |____/ \\__,_|_| |_|\\__, |\\___|\\___|____/ \\__,_|_| |_|\n                     __/ |                            \n                    |___/                             ",
+  "mutedCommands": [
+    "me",
+    "say",
+    "w",
+    "m",
+    "pm",
+    "whisper",
+    "msg",
+    "tell",
+    "r",
+    "reply",
+    "p msg"
+  ]
+}
