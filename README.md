@@ -76,13 +76,13 @@ Here is a list of all configurations used.
 }
 ```
 
-| Key           |                   Description                    |   Available values    |
-|:--------------|:------------------------------------------------:|:---------------------:|
-| `uptimeCheck` | The duration to wait between uptime checks in ms |  Any valid duration   |
-| `mysql`       |           MySQL database configuration           |  See [mysql](#mysql)  |
-| `sqlite`      |          SQLite database configuration           | See [sqlite](#sqlite) |
+| Key           |                   Description                    |  Available values  |
+|:--------------|:------------------------------------------------:|:------------------:|
+| `uptimeCheck` | The duration to wait between uptime checks in ms | Any valid duration |
+| `mysql`       |           MySQL database configuration           |     See mysql      |
+| `sqlite`      |          SQLite database configuration           |     See sqlite     |
 
-### `mysql` Object {#mysql}
+### `mysql` Object
 | Key        |       Description       |    Available values     |
 |:-----------|:-----------------------:|:-----------------------:|
 | `hostname` |   The MySQL hostname    |   Any valid hostnames   |
@@ -91,7 +91,7 @@ Here is a list of all configurations used.
 | `username` |   The MySQL username    |            -            |
 | `password` |   The MySQL password    |            -            |
 
-### `sqlite` Object {#sqlite}
+### `sqlite` Object
 | Key    |            Description            | Available values |
 |:-------|:---------------------------------:|:----------------:|
 | `path` | The filepath to the database file |        -         |
@@ -134,22 +134,22 @@ Here is a list of all configurations used.
 }
 ```
 
-| Key             |           Description            |     Available values      |
-|:----------------|:--------------------------------:|:-------------------------:|
-| `actions`       | The activated / selected actions |  See [actions](#actions)  |
-| `pastebin`      |      Pastebin configuration      | See [pastebin](#pastebin) |
-| `hastebin`      |      Hastebin configuration      | See [hastebin](#hastebin) |
-| `header`        |   The file header of chat logs   |         Any text          |
-| `mutedCommands` |    An array of muted commands    |     Any valid command     |
+| Key             |           Description            |    Available values     |
+|:----------------|:--------------------------------:|:-----------------------:|
+| `actions`       | The activated / selected actions |       See actions       |
+| `pastebin`      |      Pastebin configuration      |      See pastebin       |
+| `hastebin`      |      Hastebin configuration      |      See hastebin       |
+| `header`        |   The file header of chat logs   |        Any text         |
+| `mutedCommands` |    An array of muted commands    |    Any valid command    |
 
-### `actions` Object {#actions}
+### `actions` Object
 | Key                    |          Description          |     Available values     |
 |:-----------------------|:-----------------------------:|:------------------------:|
 | `enableLinkGeneration` |       Currently unused        |    `true` or `false`     |
 | `uploader`             |     The enabled uploader      | `hastebin` or `pastebin` |
 | `chatBacklog`          | The amount of messages to log |   Any positive number    |
 
-### `pastebin` Object {#pastebin}
+### `pastebin` Object
 | Key            |                Description                |                    Available values                     |
 |:---------------|:-----------------------------------------:|:-------------------------------------------------------:|
 | `expiration`   | The time the generated link is accessible |                            -                            |
@@ -157,7 +157,7 @@ Here is a list of all configurations used.
 | `developerKey` |        The pastebin developer key         | See [API specification](https://pastebin.com/doc_api#1) |
 | `userKey`      |           The pastebin user key           | See [API specification](https://pastebin.com/doc_api#9) |
 
-### `hastebin` Object {#hastebin}
+### `hastebin` Object
 | Key   |       Description        | Available values |
 |:------|:------------------------:|:----------------:|
 | `url` | URL to a hastebin server |  Any valid url   |
