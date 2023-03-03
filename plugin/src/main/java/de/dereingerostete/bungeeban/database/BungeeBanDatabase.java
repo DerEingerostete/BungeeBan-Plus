@@ -12,7 +12,9 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import de.dereingerostete.bungeeban.BungeeBan;
+import de.dereingerostete.bungeeban.BungeeBanPlugin;
 import de.dereingerostete.bungeeban.chat.Logging;
+import de.dereingerostete.bungeeban.chatlog.ChatLogger;
 import de.dereingerostete.bungeeban.entity.Punishment;
 import de.dereingerostete.bungeeban.entity.ban.Ban;
 import de.dereingerostete.bungeeban.entity.ban.BanReason;
@@ -390,6 +392,10 @@ public class BungeeBanDatabase extends SQLDatabase implements BanDatabase {
             @NotNull
             public Link generateLink() throws IOException {
                 String content;
+                ChatLogger logger = BungeeBanPlugin.getChatLogger();
+                String directoryPath = logger.getLogDirectoryPath();
+                if (!file.getCanonicalPath().startsWith(directoryPath)) throw new IOException("File access not allowed");
+
                 if (file.exists()) content = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
                 else content = "ChatLog could not be found";
                 return upload.createLink(content);

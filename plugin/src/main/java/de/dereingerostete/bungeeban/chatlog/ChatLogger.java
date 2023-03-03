@@ -38,15 +38,21 @@ import java.util.UUID;
 @Data
 public class ChatLogger {
     protected final @NotNull TextUpload upload;
+    private final @NotNull File logDirectory;
+    private final @NotNull String logDirectoryPath;
 
-    public ChatLogger() {
+    public ChatLogger() throws IOException {
         Config config = Configs.getChatLogConfig();
         JSONObject actionsObject = config.getJSONObject("actions");
         Preconditions.checkNotNull(actionsObject, "No actions object is defined in ChatLog config");
 
         String defaultSelected = actionsObject.getString("uploader");
         Preconditions.checkNotNull(defaultSelected, "No uploader is defined in ChatLog config");
-        upload = loadByName(defaultSelected);
+        this.upload = loadByName(defaultSelected);
+
+        File dataFolder = BungeeBanPlugin.getInstance().getDataFolder();
+        this.logDirectory = new File(dataFolder, "chatlogs");
+        this.logDirectoryPath = logDirectory.getCanonicalPath();
     }
 
     @NotNull
@@ -110,8 +116,7 @@ public class ChatLogger {
                 .append("\n"));
 
         String id = RandomStringUtils.random(12, true, true);
-        File dataFolder = BungeeBanPlugin.getInstance().getDataFolder();
-        File file = new File(dataFolder, "chatlogs/chatlog-" + System.currentTimeMillis() + "-" + id + ".txt");
+        File file = new File(logDirectory, "chatlog-" + System.currentTimeMillis() + "-" + id + ".txt");
 
         String content = builder.toString();
         FileUtils.write(file, content, StandardCharsets.UTF_8);
