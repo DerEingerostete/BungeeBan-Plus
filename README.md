@@ -1,6 +1,6 @@
 <h1 align="center">
   <br/>
-  <a href="https://github.com/DerEingerostete/BungeeBan-Plus"><img src="https://dl.dereingerostete.dev/preview?fileName=BungeeBan-Plus-Logo.png" alt="BungeeBan Plus" width="600"></a>
+  <a href="https://github.com/DerEingerostete/BungeeBan-Plus"><img src="https://files.dereingerostete.dev/GitHubAssets/BungeeBan-Plus-Logo.png" alt="BungeeBan Plus" width="600"></a>
 </h1>
 
 ___
